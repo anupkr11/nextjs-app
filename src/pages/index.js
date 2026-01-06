@@ -42,3 +42,18 @@ export async function getServerSideProps() {
 //     }
 //   }
 // }
+
+// getting data using api but it changes aftrr every fixed time interval
+// import path from 'path';
+// import fs from 'fs/promises';
+// export async function getStaticProps() {
+//   const filePath = path.join(process.cwd(), "");
+//   const jsonData = await fs.promises.readFile(filePath);
+//   const res = JSON.parse(jsonData);
+//   return {
+//     props: {
+//       res: res
+//     },
+//     revalidate: 10 // it will update the data after every 10 seconds
+//   }
+// }
