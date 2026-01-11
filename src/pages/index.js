@@ -24,6 +24,7 @@ export default function Home({ users }) {
 export async function getServerSideProps() {
   const data = await fetch("https://json-placeholder.mock.beeceptor.com/users");
   const res = await data.json();
+  console.log(res)
   return {
     props: {
       users: res
